@@ -21,7 +21,7 @@ nltk.download('punkt')
 GROQ_API_KEY = "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"
 client = Groq(api_key=GROQ_API_KEY)
 
-# Model options
+# Model opthttps://github.com/Prakhart-debug/ReportSummariser.gitions
 MODELS = {
     "LLaMA3 8b": "llama3-8b-8192",
     "LLaMA3 70b": "llama3-70b-8192",
