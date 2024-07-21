@@ -1,0 +1,15 @@
+[server]
+headless = true
+
+[general]
+install_packages = [
+    "streamlit",
+    "pandas",
+    "python-docx",
+    "numpy",
+    "matplotlib",
+    "scikit-learn",
+    "nltk",
+    "groq"
+]
+
