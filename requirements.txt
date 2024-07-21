@@ -7,4 +7,4 @@ nltk==3.8.1
 python-docx==0.8.11
 requests==2.31.0
 types-requests==2.32.0.20240712
-groq==0.1.1
+groq
