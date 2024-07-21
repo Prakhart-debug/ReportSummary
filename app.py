@@ -11,6 +11,7 @@ from nltk.tokenize import word_tokenize
 import nltk
 import streamlit as st
 from io import BytesIO
+from groq import Groq
 import groq
 Groq = groq.Groq
 
