@@ -15,8 +15,8 @@ from groq import Groq
 
 
 # Ensure nltk resources are downloaded
-#nltk.download('stopwords')
-#nltk.download('punkt')
+nltk.download('stopwords')
+nltk.download('punkt')
 
 # Groq API Key (ensure this is set properly)
 GROQ_API_KEY = "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"
