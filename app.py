@@ -14,9 +14,19 @@ from io import BytesIO
 from groq import Groq
 
 
-# Ensure nltk resources are downloaded
-nltk.download('stopwords')
-nltk.download('punkt')
+nltk_data_path = os.path.expanduser('~/.nltk_data')
+if not os.path.exists(nltk_data_path):
+    os.makedirs(nltk_data_path)
+os.environ['NLTK_DATA'] = nltk_data_path
+
+# Check if the necessary resources are already downloaded
+try:
+    stop_words = set(stopwords.words('english'))
+    word_tokenize('test')
+except LookupError:
+    import nltk
+    nltk.download('stopwords', download_dir=nltk_data_path)
+    nltk.download('punkt', download_dir=nltk_data_path)
 
 # Groq API Key (ensure this is set properly)
 GROQ_API_KEY = "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"
